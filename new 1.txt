@@ -1,0 +1,83 @@
+<div class="testimonials">
+		<div class="container">
+			<h3 class="title-txt"><span>A</span>dvertisment</h3>
+			<div class="col-md-6 testimonials-main">
+				<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<div class="inner-testimonials-w3ls">
+									<a href="displayadd.php"><img src="images/1.jpg" alt=" " class="img-responsive" style="width:50%;height:300px"; /></a>
+									<div class="testimonial-info-wthree">
+										<h5>Yasiru</h5>
+										<span>kurunegala</span>
+										<p class="para-w3ls">Type about add1</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inner-testimonials-w3ls">
+								<a href="displayadd.php"><img src="images/2.jpg" alt=" " class="img-responsive" style="width:50%;height:300px;" /></a>
+									<div class="testimonial-info-wthree">
+										<h5>sadisa</h5>
+										<span>Ambalanthota</span>
+										<p class="para-w3ls">Type about add2 </p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inner-testimonials-w3ls">
+								<a href="displayadd.php"><img src="images/4.jpg" alt=" " class="img-responsive" style="width:50%;height:300px;" /></a>
+									<div class="testimonial-info-wthree">
+										<h5>madusha</h5>
+										<span>meerigama</span>
+										<p class="para-w3ls">Type about add3 </p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	
+	<script src="js/main.js"></script>
+
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	
+
+	
+	<script src="js/responsiveslides.min.js"></script>
+
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				start: function (slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>
+	}

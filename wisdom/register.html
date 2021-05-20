@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Registration</title>
+
+   
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        ::placeholder {
+          color: rgb(95, 88, 88);
+          opacity: 1; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            
+            <form method="POST" class="appointment-form" id="appointment-form" action="MainAction.php">
+                
+                <h2>Registration</h2>
+                <div class="form-group-1">
+                    <input type="text" name="first_name" id="first_name" placeholder="First Name" required />
+
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name" required />
+
+                    <input type="text" name="id_number" id="id_number" placeholder="Identity Number" required />
+
+                    <input type="text" name="address" id="address" placeholder="Address" required />
+
+                    <input type="number" name="phone_number" id="phone_number" placeholder="Phone Number" required />
+
+                    <input type="email" name="email" id="email" placeholder="Valid Email" required />
+
+                   
+                    
+
+   <!---Student's academic year-->
+                   
+                    <input type="text" name="parent_name" id="parent_name" placeholder="Parent / Guardian Name" required />
+                    <input type="text" name="guardian_type" id="parent_name" placeholder="Parent or Guardian" required />
+                    <input type="text" name="parent_tnumber" id="parent_tnumber" placeholder="Parent / Guardian Contact Number" required />
+                    <input type="text" name="parent_email" id="parent_email" placeholder="Parent / Guardian Email" required />
+                  
+                </div>
+
+               
+                <div class="form-group-2">
+                    <h3>If you having any siblings type their age</h3>
+
+                    <input type="text" name="siblings" id="siblings"/>
+                  
+                   
+                </div>
+              
+                
+               
+                <div class="form-submit">
+                    <input type="submit" name="student_save" id="submit" class="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+   
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
